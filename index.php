@@ -141,7 +141,7 @@ if ($row = $stmt->fetch()) {
                     <tbody>
                         <?php foreach ($recent_rows as $row): ?>
                         <tr>
-                            <td><?php echo date('M d, Y', strtotime($row['experience_date'])); ?></td>
+                            <td><?php echo date('M d, Y', strtotime($row['date'])); ?></td>
                             <td><?php echo date('H:i', strtotime($row['start_time'])) . ' - ' . date('H:i', strtotime($row['end_time'])); ?></td>
                             <td><?php echo number_format($row['distance_km'], 2); ?></td>
                             <td><?php echo htmlspecialchars($row['vehicle']); ?></td>
